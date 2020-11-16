@@ -1,5 +1,5 @@
 # Weather-Dashboard
-<img width="1739" alt="Screen Shot 2020-11-15 at 10 06 43 PM" src="https://user-images.githubusercontent.com/70423368/99218294-ef62c900-278e-11eb-846e-ee854499756c.png"
+<img width="1739" alt="Screen Shot 2020-11-15 at 10 06 43 PM" src="https://user-images.githubusercontent.com/70423368/99218294-ef62c900-278e-11eb-846e-ee854499756c.png">
 GIVEN a weather dashboard with form inputs
 WHEN I search for a city
 THEN I am presented with current and future conditions for that city and that city is added to the search history
