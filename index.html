@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> -->
 </head>
 <body>
-    <section class="top-banner">
+    <section id="body" class="top-banner">
         <div class="container">
           <h1 class="heading">Weather Dashboard</h1>
           <form>
@@ -30,8 +31,19 @@
         <div class="component__forecast-box"></div>
       </div>      
 
-      </footer>
+      <footer>
+        <div class="component__weather-box">
+  <div class="component__weather-content">
+    <div class="weather-content__overview"></div>
+    <div class="weather-content__temp"></div>
+  </div>
+  <div class="component__forecast-box"></div>
+</div>
+
+      </footer> 
+
       <script src="javascript.js"></script>
+      
 
 </body>
 </html>

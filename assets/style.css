@@ -1,7 +1,8 @@
 /* RESET STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 :root {
-    --bg_main: #0a1f44;
+    --bg_main: #e2860daa;
     --text_light: #fff;
     --text_med: #53627c;
     --text_dark: #1e2432;
@@ -16,6 +17,14 @@
     box-sizing: border-box;
     font-weight: normal;
   }
+  
+  #body {
+    background-image: url("https://wi-images.condecdn.net/image/doEYpG6Xd87/crop/1440/f/weather.jpg");
+    height: 700px;
+    position: relative;
+    justify-self: flex-end;
+  }
+  
   
   a {
     color: inherit;
@@ -67,6 +76,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .top-banner {
     color: var(--text_light);
+    text-align: center;
   }
   
   .heading {
@@ -109,14 +119,14 @@
   }
   
   .top-banner form .msg {
-    position: absolute;
+    position: center;
     bottom: -40px;
     left: 0;
     max-width: 450px;
     min-height: 40px;
   }
   
-  
+
   /* SECTION #2
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .ajax-section {
