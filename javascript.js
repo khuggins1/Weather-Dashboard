@@ -1,16 +1,16 @@
 /*SEARCH BY USING A CITY NAME (e.g. athens) OR A COMMA-SEPARATED CITY NAME ALONG WITH THE COUNTRY CODE (e.g. athens,gr)*/
-const form = document.querySelector(".top-banner form");
-const input = document.querySelector(".top-banner input");
-const msg = document.querySelector(".top-banner .msg");
-const list = document.querySelector(".ajax-section .cities");
+const begin  = document.querySelector(".headline form");
+const data = document.querySelector(".headline input");
+const language = document.querySelector(".headline .report");
+const choices = document.querySelector(".weather .places");
 const apiKey = "00853f1e6bb3f3004140de64ac08e7c7";
 
-form.addEventListener("submit", e => {
+begin.addEventListener("submit", e => {
   e.preventDefault();
-  let inputVal = input.value;
+  let inputVal = data.value;
 
   //check if there's already a city
-  const listItems = list.querySelectorAll(".ajax-section .city");
+  const listItems = choices.querySelectorAll(".weather .city");
   const listItemsArray = Array.from(listItems);
 
   if (listItemsArray.length > 0) {
@@ -35,11 +35,11 @@ form.addEventListener("submit", e => {
     });
 
     if (filteredArray.length > 0) {
-      msg.textContent = `You already know the weather for ${
+      language.textContent = `You already entered the weather for ${
         filteredArray[0].querySelector(".city-name span").textContent
-      } ...otherwise be more specific by providing the country code as well 😉`;
-      form.reset();
-      input.focus();
+      } ...please be more specific`;
+      begin.reset();
+      data.focus();
       return;
     }
   }
@@ -71,15 +71,15 @@ form.addEventListener("submit", e => {
         </figure>
       `;
       li.innerHTML = markup;
-      list.appendChild(li);
+      choices.appendChild(li);
     })
     .catch(() => {
-      msg.textContent = "Please search for a valid city 😩";
+      language.textContent = "Please check spelling of the city";
     });
 
-  msg.textContent = "";
-  form.reset();
-  input.focus();
+  language.textContent = "";
+  begin.reset();
+  data.focus();
 });
 
 // five day weather //
