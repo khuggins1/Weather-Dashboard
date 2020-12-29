@@ -10,13 +10,13 @@ begin.addEventListener("submit", e => {
   let inputVal = data.value;
 
   //check if there's already a city
-  const listItems = choices.querySelectorAll(".weather .city");
-  const listItemsArray = Array.from(listItems);
+  const options = choices.querySelectorAll(".weather .city");
+  const possibilities  = Array.from(options);
 
-  if (listItemsArray.length > 0) {
-    const filteredArray = listItemsArray.filter(el => {
+  if (possibilities.length > 0) {
+    const filteredArray = possibilities.filter(el => {
       let content = "";
-      //athens,gr
+      
       if (inputVal.includes(",")) {
         //athens,grrrrrr->invalid country code, so keep only the first part of inputVal
         if (inputVal.split(",")[1].length > 2) {
