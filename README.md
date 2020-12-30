@@ -1,5 +1,5 @@
 # Weather-Dashboard
-<img width="1723" alt="Screen Shot 2020-12-28 at 9 31 05 PM" src="https://user-images.githubusercontent.com/70423368/103260863-126ac600-4954-11eb-9d9b-8114335bce33.png">
+<img width="1587" alt="Screen Shot 2020-12-29 at 4 23 44 PM" src="https://user-images.githubusercontent.com/70423368/103322257-4eecff00-49f2-11eb-8991-7a36c4d410d2.png">
 
 GIVEN a weather dashboard with form inputs
 WHEN I search for a city
