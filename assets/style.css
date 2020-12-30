@@ -1,5 +1,4 @@
-/* RESET STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 
 :root {
     --bg_main: #e2860daa;
@@ -126,8 +125,8 @@
     position: relative;
     padding: 40px 10%;
     border-radius: 20px;
-    background: var(--text_light);
-    color: var(--text_med);
+    background: yellow;
+    color: black;
   }
   
   .weather .city::after {
@@ -163,8 +162,8 @@
   .weather .city-name sup {
     padding: 0.2em 0.6em;
     border-radius: 30px;
-    color:white;
-    background: red;
+    color: white;
+    background: black;
   }
   
   .weather .city-icon {

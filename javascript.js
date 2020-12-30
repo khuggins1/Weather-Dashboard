@@ -21,15 +21,15 @@ begin.addEventListener("submit", e => {
         //athens,grrrrrr->invalid country code, so keep only the first part of inputVal
         if (inputVal.split(",")[1].length > 2) {
           inputVal = inputVal.split(",")[0];
-          content = el
+          content = elment
             .querySelector(".city-name span")
             .textContent.toLowerCase();
         } else {
-          content = el.querySelector(".city-name").dataset.name.toLowerCase();
+          content = elment.querySelector(".city-name").dataset.name.toLowerCase();
         }
       } else {
         //athens
-        content = el.querySelector(".city-name span").textContent.toLowerCase();
+        content = elment.querySelector(".city-name span").textContent.toLowerCase();
       }
       return content == inputVal.toLowerCase();
     });
